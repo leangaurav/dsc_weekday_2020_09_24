@@ -1,0 +1,132 @@
+Q1.Soln
+---------------------------
+#Cel and F
+f=input("Enter temparature in Farenheit: ").strip()
+if f.isnumeric():
+    f=int(f)
+    c=(f-32)*5/9
+    print(f"Temparataure in Celcius is: {c}")
+    #print(type(c))
+else:
+    print("Enter whoe/le numbers please!")
+---------------------------
+Q2.Soln
+---------------------------
+import math
+n=input("Enter a number:").strip()
+if n.isnumeric():
+    n=int(n)
+    nsqr=n**2
+    ncube=n**3
+    print(nsqr)
+    print(ncube)
+---------------------------
+Q3.Soln
+---------------------------
+n=input("Enter first number: ").strip()
+m=input("Enter second number: ").strip()
+if n.isnumeric() and m.isnumeric():
+    n=int(n)
+    m=int(m)
+    p=m**2+n**2
+    print(p)
+---------------------------
+Q4.Soln
+---------------------------
+import math
+n=input("Enter first number: ").strip()
+m=input("Enter second number: ").strip()
+if n.isnumeric() and m.isnumeric():
+    n=int(n)
+    m=int(m)
+    p=m**n
+    q=pow(m,n)
+    print(p)
+    print(q)
+---------------------------
+Q5.Soln
+---------------------------
+p=input("Enter principal amount: ").strip()
+r=input("Enter rate of interest: ").strip()
+t=input("Enter years taken: ").strip()
+if p.isnumeric() and r.isnumeric() and t.isnumeric():
+    p=int(p)
+    r=int(r)
+    t=int(t)
+    si=(p*r*t)/100
+    print(f"Simple interest is:{si}")
+---------------------------
+Q6.Soln
+---------------------------
+p=input("Enter principal amount: ").strip()
+r=input("Enter rate of interest: ").strip()
+t=input("Enter years taken: ").strip()
+if p.isnumeric() and r.isnumeric() and t.isnumeric():
+    p=int(p)
+    r=int(r)
+    t=int(t)
+    ci=p*(1+r/100)**t-p
+    amnt=p+ci
+    print(f"Compound interest is:{ci}")
+    print(f"Total amount is:{amnt}")
+---------------------------
+Q7.Soln
+---------------------------
+n=input("Enter value n to get sum of n natural numbers:").strip()
+if n.isnumeric():
+    n=int(n)
+    s=n*(n+1)/2
+    print(f"Sum of n natural numbers:{s}")
+---------------------------
+Q8.Soln
+---------------------------
+a=input("Enter first number: ").strip()
+b=input("Enter second number: ").strip()
+print(f"Values before swap: {a},{b}")
+c=a
+a=b
+b=c
+print(f"Values after swap:{a},{b}")
+---------------------------
+Q9.Soln
+---------------------------
+s=' '
+ascv=ord(s)
+print(ascv)
+---------------------------
+Q10.Soln.
+---------------------------
+s1=input('Enter single character: ').strip()
+s2=s1[0]
+ascv1=ord(s2)
+print(ascv1)
+---------------------------
+Q11.Soln.
+---------------------------
+import math
+#3.14*(r)**2
+a=input("Enter area of a circle:").strip()
+if a.isnumeric():
+    a=int(a)
+    PI=3.14
+    r=math.sqrt(a/PI)
+    print(f"Radius is:{r}")
+    c=2*PI*r
+    print(f"Circumference is:{c}")
+---------------------------
+Q12Soln.
+---------------------------
+a=input("Enter subject 1 marks: ").strip()
+b=input("Enter subject 2 marks: ").strip()
+c=input("Enter subject 3 marks: ").strip()
+d=input("Enter subject 4 marks: ").strip()
+e=input("Enter subject 5 marks: ").strip()
+if a.isnumeric() and b.isnumeric() and c.isnumeric() and d.isnumeric() and e.isnumeric():
+    a=int(a)
+    b=int(b)
+    c=int(c)
+    d=int(d)
+    e=int(e)
+    percentage=((a+b+c+d+e)/500)*100
+    print(f"Percentage value: {percentage}")
+---------------------------
