@@ -1,2 +1,5 @@
 # Q1
 print("Hello")
+
+# Q2
+print("world")
