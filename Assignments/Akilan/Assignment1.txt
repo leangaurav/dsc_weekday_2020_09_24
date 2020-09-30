@@ -1,0 +1,119 @@
+#1. Predict the Output
+s1='Gaurav'
+s2='tuteur.py@gmail.com'
+print(len(s1),len(s2))
+
+Output : 6 19
+---------------------------------------
+#2. 
+
+s=input('Enter a String :')
+print(len(s))
+
+Enter a String :Akilan
+6
+---------------------------------------
+#3.
+num1 = int(input('Enter Number1 : '))
+num2 = int(input('Enter Number2 : '))
+add = num1 + num2
+if num1 > num2:
+    diff=num1-num2
+else:
+    diff=num2-num1
+print('Sum of num1 and num2 :',add)
+print('Difference of num1 and num2 :', diff)
+
+--------------------------------------------
+#4. abde
+----------------------------------------
+#5. abde 
+---------------------------------------
+#6. abababab
+-------------------------------------
+#7 
+
+ab
+ab
+ab
+ab
+
+------------------------------------------
+#8
+s=input('Enter a String : ')
+n=int(input('Enter a number to repeat a string :'))
+print((s+'\n')*n)
+
+----------------------------------------
+#9
+Gaurav
+
+----------------------------------------
+#10
+
+<class 'int'>
+
+----------------------------------------
+#11
+
+<class 'str'>
+26
+
+---------------------------------------
+#12
+
+math.sqrt()
+--------------------------------------
+
+#13
+
+import math
+n=int(input('Input a Number : '))
+print(math.sqrt(n))
+
+
+-----------------------------------
+
+#14
+
+n1=int(input('n1 \t'))
+n2=int(input('n2 \t'))
+n3=int(input('n3 \t'))
+n4=int(input('n4 \t'))
+avg=(n1+n2+n3+n4)/4
+print('Average of n1,n2,n3 and n4 is',avg,sep=' ')
+
+--------------------------------------
+#15
+
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+---------------------------------------
+#16
+__main__
+
+--------------------------------------------
+#17
+
+__main__
+
+--------------------------------------------
+#18
+
+No
+
+-------------------------------------------
+
+#19
+
+__main__
+builtins
+int
+
+------------------------------------------
+
+
+
+
