@@ -1,2 +1,0 @@
-print(Q1)
-print(Q1)
