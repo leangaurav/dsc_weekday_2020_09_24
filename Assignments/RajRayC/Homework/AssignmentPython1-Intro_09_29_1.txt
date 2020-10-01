@@ -1,0 +1,114 @@
+Q1.Soln
+---------------------------
+6,19
+----------------------------
+Q2.Soln.
+-----------------------------
+#Print number of characters
+s=input("Write your name to find the number of characters in it:\n").strip()
+print(len(s))
+--------------------------------
+Q3.Soln.
+-------------------------------
+a=int(input("Enter first number: ").strip())
+b=int(input("Enter second number: ").strip())
+c=a+b
+print(f"The sum is {c}")
+d=a-b
+print(f"The difference is {d}")
+-------------------------------
+Q4.Soln.
+-------------------------------
+abde
+-------------------------------
+Q5.Soln.
+------------------------------
+abde
+-------------------------------
+Q6.Soln.
+-------------------------------
+abab
+-------------------------------
+Q7.
+ab
+ab
+ab
+ab
+-------------------------------
+Q8.Soln.
+-------------------------------
+s=input("Enter a string: ")
+n=int(input("Enter the number of times to be printed: "))
+s1=(s+'\n')*n
+print(s1)
+--------------------------------
+Q9.Soln.
+-------------------------------
+Gaurav
+None
+--------------------------------
+Q10.Soln.
+-------------------------------
+<class 'int'>
+--------------------------------
+Q11.Soln.
+-------------------------------
+<class 'str'>
+<class 'int'>
+--------------------------------
+Q12.Soln.
+-------------------------------
+math.sqrt()
+--------------------------------
+Q13.Soln.
+-------------------------------
+import math
+n=float(input("Enter a number: "))
+nrt=math.sqrt(n)
+print(nrt)
+--------------------------------
+Q14.Soln.
+-------------------------------
+a=int(input("Enter first number: "))
+b=int(input("Enter second number: "))
+c=int(input("Enter third number: "))
+d=int(input("Enter fourth number: "))
+sum=a+b+c+d
+avg=sum/4
+print(avg)
+--------------------------------
+Q15.Soln.
+-------------------------------
+Help on built-in function abs in module builtins:
+
+abs(x, /)
+    Return the absolute value of the argument.
+
+--------------------------------
+Q16.Soln.
+-------------------------------
+__main__
+--------------------------------
+Q17.Soln.
+-------------------------------
+__main__
+--------------------------------
+Q18.Soln.
+-------------------------------
+N
+--------------------------------
+Q19.Soln.
+-------------------------------
+__main__
+builtins
+int
+--------------------------------
+
+
+
+
+
+
+
+
+
