@@ -1,0 +1,523 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter first number12\n",
+      "Enter second number5\n",
+      "FALSE\n"
+     ]
+    }
+   ],
+   "source": [
+    "m = int(input(\"Enter first number\"))\n",
+    "n = int(input(\"Enter second number\"))\n",
+    "def multiple(m, n):\n",
+    "    return True if m % n == 0 else False\n",
+    "\n",
+    "status = multiple(m,n)\n",
+    "if status:\n",
+    "    print(\"TRUE\")\n",
+    "else :    \n",
+    "    print(\"FALSE\")    \n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any string :Naman\n",
+      "Yes\n"
+     ]
+    }
+   ],
+   "source": [
+    "s= input(\"Enter any string :\")\n",
+    "def isPalindrome(s):\n",
+    "    s=s.upper()\n",
+    "    return s == s[::-1]\n",
+    " \n",
+    "ans = isPalindrome(s)\n",
+    "if ans:\n",
+    "    print(\"Yes\")\n",
+    "else:\n",
+    "    print(\"No\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Input lengths of the triangle sides: \n",
+      "x: 12\n",
+      "y: 12\n",
+      "z: 12\n",
+      "Equilateral triangle\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Input lengths of the triangle sides: \")\n",
+    "x = int(input(\"x: \"))\n",
+    "y = int(input(\"y: \"))\n",
+    "z = int(input(\"z: \"))\n",
+    "\n",
+    "if x == y == z:\n",
+    "\tprint(\"Equilateral triangle\")\n",
+    "elif x==y or y==z or z==x:\n",
+    "\tprint(\"isosceles triangle\")\n",
+    "else:\n",
+    "\tprint(\"Scalene triangle\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter any number: 12\n",
+      "12 is an even number\n"
+     ]
+    }
+   ],
+   "source": [
+    "#WAP to input a number and print if it is even or odd.\n",
+    "num = int(input(\"Enter any number: \"))\n",
+    "flag = num%2\n",
+    "if flag == 0:\n",
+    "    print(num, \"is an even number\")\n",
+    "elif flag == 1:\n",
+    "    print(num, \"is an odd number\")\n",
+    "else:\n",
+    "    print(\"Error, Invalid input\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter age:34\n",
+      "Adult\n"
+     ]
+    }
+   ],
+   "source": [
+    "age= int(input(\"Enter age:\"))\n",
+    "if 0 <= age and age <=12:\n",
+    "    print(\"Child\")\n",
+    "elif 13 <= age and age <=17:\n",
+    "    print(\"Teen\")\n",
+    "elif 18 <= age and age <=50:\n",
+    "    print(\"Adult\")\n",
+    "elif 51 <= age and age <=100:\n",
+    "    print(\"Senior Citizen \")\n",
+    "elif age<100 :\n",
+    "    print(\"Contratulations\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter Year: abc\n",
+      "abc enter correct year\n"
+     ]
+    }
+   ],
+   "source": [
+    "year = input(\"Enter Year: \")\n",
+    "if len(year) == 4:\n",
+    "    year=int(year)\n",
+    "        # Leap Year Check\n",
+    "    if year % 4 == 0 and year % 100 != 0:\n",
+    "        print(year, \"is a Leap Year\")\n",
+    "    elif year % 100 == 0:\n",
+    "        print(year, \"is not a Leap Year\")\n",
+    "    elif year % 400 ==0:\n",
+    "        print(year, \"is a Leap Year\")\n",
+    "    else:\n",
+    "        print(year, \"is not a Leap Year\")\n",
+    "else:\n",
+    "    print(year, \"enter correct year\")\n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please Enter your Own String : ABCD\n",
+      "The Given String in Lowercase =   abcd\n"
+     ]
+    }
+   ],
+   "source": [
+    "string = input(\"Please Enter your Own String : \")\n",
+    "if len(string)%2 == 0 :\n",
+    "    string1 = string.lower()\n",
+    "    print(\"The Given String in Lowercase =  \", string1)\n",
+    "\n",
+    "else:\n",
+    "    string1 = string.upper()\n",
+    "    print(\"The Given String in Uppercase =  \", string1)\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Please Enter your Own String : vineet\n",
+      "Veg\n"
+     ]
+    }
+   ],
+   "source": [
+    "string = input(\"Please Enter your Own String : \")\n",
+    "if \"egg\" in string or \"EGG\" in string:\n",
+    "    print (\"Non-veg\")\n",
+    "else:\n",
+    "    print (\"Veg\")\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n"
+     ]
+    }
+   ],
+   "source": [
+    "if not 1:\n",
+    "    print(\"False\")\n",
+    "else:\n",
+    "    print(\"True\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Weird\n"
+     ]
+    }
+   ],
+   "source": [
+    "if 'a' >'A' :\n",
+    "    print(\"Weird\")\n",
+    "else:\n",
+    "    print(\"make sense\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "true\n"
+     ]
+    }
+   ],
+   "source": [
+    "if 1:\n",
+    "    print(\"true\")\n",
+    "else:\n",
+    "    print(\"false\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[4, 3, 2, 1]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a =[1,2,3,4]\n",
+    "if 1>1 :\n",
+    "    a=a[::-1]\n",
+    "else:\n",
+    "    a=a[-1::-1]\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter marks of the first subject: 60\n",
+      "Enter marks of the second subject: 60\n",
+      "Enter marks of the third subject: 60\n",
+      "Enter marks of the fourth subject: 60\n",
+      "Enter marks of the fifth subject: 60\n",
+      "Grade: C\n"
+     ]
+    }
+   ],
+   "source": [
+    "sub1=int(input(\"Enter marks of the first subject: \"))\n",
+    "sub2=int(input(\"Enter marks of the second subject: \"))\n",
+    "sub3=int(input(\"Enter marks of the third subject: \"))\n",
+    "sub4=int(input(\"Enter marks of the fourth subject: \"))\n",
+    "sub5=int(input(\"Enter marks of the fifth subject: \"))\n",
+    "per=((sub1+sub2+sub3+sub4+sub4)/500)*100\n",
+    "if(per>=90 and per<=100):\n",
+    "    print(\"Grade: A\")\n",
+    "elif(per>=80 and per<90):\n",
+    "    print(\"Grade: B\")\n",
+    "elif(per>=60 and per<80):\n",
+    "    print(\"Grade: C\")\n",
+    "else:\n",
+    "    print(\"Grade: F\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter Basic Salary :240000\n",
+      "Enter Age :22\n",
+      "Tax:  0\n"
+     ]
+    }
+   ],
+   "source": [
+    "#WAP to input age and salary and calculate Tax as per tax rates\n",
+    "salary = int(input(\"Enter Basic Salary :\"))\n",
+    "age =int(input(\"Enter Age :\"))\n",
+    "def calc(salary,age):\n",
+    "    if salary in range(0,250000):\n",
+    "        return salary * 0\n",
+    "    elif salary in range(250000,500000):\n",
+    "        if age < 60 :\n",
+    "            return (salary * 5)/100\n",
+    "        elif age >=60:\n",
+    "            return (salary * 3)/100\n",
+    "    elif salary in range(500000,1000000): \n",
+    "        if age < 60 :\n",
+    "            return (salary * 10)/100\n",
+    "        elif age >=60:\n",
+    "            return (salary * 8)/100\n",
+    "    elif salary > 1000000:\n",
+    "        if age < 60 :\n",
+    "            return (salary * 15)/100\n",
+    "        elif age >=60:\n",
+    "            return (salary * 12)/100\n",
+    "    \n",
+    "\n",
+    "cal_tax =calc(salary,age)\n",
+    "print(\"Tax: \",cal_tax)\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter your height in Centimeters: 171\n",
+      "Enter your weight in Kg: 69\n",
+      "Your Body Mass Index is:  23\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Python's program to calculate the body mass index (BMI) of an individual\n",
+    "##\n",
+    " \n",
+    "#Define the constants\n",
+    "METER   = 100\n",
+    " \n",
+    "#Read the inputs from user\n",
+    "height  = float(input(\"Enter your height in Centimeters: \"))\n",
+    "weight  = float(input(\"Enter your weight in Kg: \"))\n",
+    " \n",
+    "temp    = height / METER\n",
+    "#Calculate the BMI\n",
+    "bmi = weight / (temp*temp)\n",
+    " \n",
+    "#Display the result\n",
+    "print(\"Your Body Mass Index is: \",\"%d\"%(bmi))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter First number : 2\n",
+      "Enter Second number : 3\n",
+      "Enter Third number : 1\n",
+      "The oldest person age is :  3\n",
+      "The youngest person age is :  1\n"
+     ]
+    }
+   ],
+   "source": [
+    "number1 = int(input('Enter First number : '))\n",
+    "number2 = int(input('Enter Second number : '))\n",
+    "number3 = int(input('Enter Third number : '))\n",
+    "def largest(num1, num2, num3):\n",
+    "    if (num1 > num2) and (num1 > num3):\n",
+    "        largest_num = num1\n",
+    "    elif (num2 > num1) and (num2 > num3):\n",
+    "        largest_num = num2\n",
+    "    else:\n",
+    "        largest_num = num3\n",
+    "    print(\"The oldest person age is : \", largest_num)\n",
+    "def smallest(num1, num2, num3):\n",
+    "    if (num1 < num2) and (num1 < num3):\n",
+    "        smallest_num = num1\n",
+    "    elif (num2 < num1) and (num2 < num3):\n",
+    "        smallest_num = num2\n",
+    "    else:\n",
+    "        smallest_num = num3\n",
+    "    print(\"The youngest person age is : \", smallest_num)\n",
+    "largest(number1, number2, number3)\n",
+    "smallest(number1, number2, number3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Enter First number : 30\n",
+      "30 is not divisible by both 5 and 7 \n"
+     ]
+    }
+   ],
+   "source": [
+    "#WAP to input a number and check if number is divisible by both 5 and 7.\n",
+    "number1 = int(input('Enter First number : '))\n",
+    "if number1 % 5 == 0 and number1 % 7 == 0: \n",
+    "    print (\"{} is divisible by both 5 and 7 \".format(number1))\n",
+    "else:\n",
+    "    print (\"{} is not divisible by both 5 and 7 \".format(number1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
