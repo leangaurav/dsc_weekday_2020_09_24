@@ -1,0 +1,30 @@
+1) Predict Output:
+s1 = 'Gaurav'
+s2 = 'tuteur.py@gmail.com'
+print (len(s1), len(s2))
+
+OUTPUT-> 
+6, 19
+
+2) WAP to input a string and print its length.
+x = input("Enter a string:")
+print(f"Length of the string is: {len(x)}")
+
+OUTPUT-> 
+Enter a string:Hello Python
+Length of the string is: 12
+
+3) WAP to input 2 numbers and print their sum and difference.
+x = int(input("1st number:"))
+y = int(input("2nd number:"))
+print (f"Sum: {x+y}")
+print (f"Difference: {x-y}")
+
+OUTPUT->
+1st number:2
+2nd number:3
+Sum: 5
+Difference: -1
+
+4) Predict output:
+
