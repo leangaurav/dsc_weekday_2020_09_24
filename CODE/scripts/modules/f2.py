@@ -1,0 +1,1 @@
+print("script  f2:", __name__)
