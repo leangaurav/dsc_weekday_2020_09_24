@@ -1,0 +1,109 @@
+                                        Assignment 2- Strings
+                                        
+                                        
+ #1.
+ 
+   1. s[-1] : d
+   2. s[::-1] : detneirO tcejbO si nohtyP
+   3. s[:-1] : Python is Object Oriente
+   4. s[1:1] : No output
+   5. s[4:10] : on is 
+   
+ ----------------------------------------------------------------------------------
+ 
+ #2. Index Error : String Index error out of range
+ 
+ ---------------------------------------------------------------------------------
+ 
+ #3. Name Error: name 'S' is not defined
+ 
+ ---------------------------------------------------------------------------------
+ 
+ #4.
+ 
+ a. 6
+    abc
+    3
+    
+ b. ['a#b#c#d#']
+    ['a','b','c','d','']
+    a$b$c$d$
+  
+ c. av
+ 
+ d. False
+ 
+ e. 0,1,2
+ 
+ f. abcba
+    000
+ 
+ -----------------------------------------------------------------------------
+ 
+ #5.
+ 
+ s= input('Enter a string : \t')
+ print(s.replace(' ',''))
+ 
+ ----------------------------------------------------------------------------
+ 
+ #6.
+ 
+ list
+ 
+ ----------------------------------------------------------------------------
+ 
+ #7.
+ 
+ ['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmod__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 'isalpha', 'isascii', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper', 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 'title', 'translate', 'upper', 'zfill']
+ 
+ 
+ ------------------------------------------------------------------------
+ 
+ #8.
+ 
+s=dir(str)
+I='$'.join(s)
+print(I.find('rstrip'))
+
+-----------------------------------------------------------------------------
+
+#9.
+
+S='''*****\n  *\n  *\n  *\n  *'''
+T='''*   *\n** **\n* * *\n*   *'''
+X='''________\n |     |\n o     |\n/|\    |\n/ \    |'''
+print(S)
+print(T)
+print(X)
+
+-------------------------------------------------------------------------
+
+#10.
+
+s=input('Enter a String : \t')
+I=s.split()
+a=len(I)
+for n in range(a):
+    print(I[n],end='\n')
+    
+-----------------------------------------------------------------------------
+
+#11.
+
+
+s="Akilan Ragavan"
+s=s.upper()
+i=s.split()
+print('First Name',i[0],len(i[0]),'\nLast Name',i[1],len(i[0]))
+
+--------------------------------------------------------------------------------------
+
+#12.
+
+import random
+s='Akilan Ragavan'
+l=len(s)
+x=random.randint(0,l)
+print(s[0:x])
+print(s[x:l])
